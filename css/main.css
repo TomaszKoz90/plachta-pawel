@@ -1,0 +1,253 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1.8rem;
+	font-family: 'Arvo', sans-serif;
+	scroll-behavior: smooth;
+	color: #d9d6d0;
+
+	overflow-x: hidden;
+}
+
+[id] {
+	scroll-margin-top: 100px;
+}
+
+.hero-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: -1;
+}
+
+.navbar-brand {
+	font-size: 2.8rem;
+	height: 10px;
+}
+
+.navbar-nav {
+	font-size: 24px;
+	margin: 0 40px;
+}
+
+/*header*/
+
+.home {
+	position: relative;
+	background-image: url(../img/shutters-669296_1920.jpg);
+	z-index: 0;
+	height: 800px;
+	opacity: 0.9;
+	font-weight: bolder;
+	z-index: 0;
+}
+.home-head {
+	font-weight: bolder;
+}
+
+.home-bottom {
+	font-size: 40px;
+}
+
+.btn {
+	font-size: 40px;
+	text-transform: uppercase;
+	padding: 20px 50px;
+	color: rgb(161, 144, 46);
+}
+
+/*aboutus */
+
+.aboutus {
+	
+	position: relative;
+	background-color: #2375b4;
+
+	background-image: url(../img/wooden-floor-1853409_1920.jpg);
+	color: white;
+	box-shadow: 40px;
+	z-index: 0;
+}
+
+.fa-ab {
+	font-size: 120px;
+	/* color:rgb(22, 137, 62); */
+	color: #0aa7e6;
+	padding: 20px;
+	cursor: pointer;
+}
+
+/*services*/
+.services {
+	/* background-color: #3f85d0; */
+
+	background-image: url(../img/wooden-floor-1853409_1920.jpg);
+}
+
+.boxes {
+	position: relative;
+	height: 400px;
+	margin: 20px;
+	border-radius: 9%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border: 4px solid white;
+	font-size: 30px;
+	cursor: pointer;
+	transition: text-transform .5s;
+	background-size: cover;
+	z-index: 0;
+}
+
+.boxes:hover {
+	text-transform: uppercase;
+
+	
+}
+.one {
+	background-image: url(../img/img-specjalizacja/four-saloon.jpg);
+	
+}
+.two {
+	background-image: url(../img/img-specjalizacja/two\ -\ sleep.jpg);
+	background-position: 0 65%;
+}
+
+.three {
+	background-image: url(../img/img-specjalizacja/one-kitchen.jpg);
+	
+}
+
+.four {
+	background-image: url(../img/img-specjalizacja/three-\ badrom.jpg);
+	
+}
+
+/*gallery*/
+
+
+
+.gallery {
+	
+	background-image: url(../img/wooden-floor-1853409_1920.jpg);
+	position: relative;
+	z-index: 0;
+}
+
+.images {
+	display: flex;
+	
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.images img {
+	width: 500px;
+	height: 500px;
+	border-radius: 20px;
+	border: 1px solid rgb(213, 202, 202);
+	margin: 20px;
+	opacity:0.65;
+	transition: opacity .3s;
+	cursor: pointer;
+	
+}
+
+.images img:hover{
+	opacity:1;
+}
+
+/*sekcja kontaktowa */
+
+.contact {
+	background-color: #19242c;
+}
+.contact-mail {
+	font-size: 22px;
+}
+
+.frame-src {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer {
+	background-color: #11202e;
+	height: 150px;
+	color: white;
+	font-size: 20px;
+}
+
+@media (min-width: 768px) {
+	.services-name {
+		font-size: 21px;
+		padding: 0 41px;
+		font-weight: bolder;
+		object-fit: cover;
+	}
+}
+
+
+
+@media (max-width: 576px) {
+
+	.images {
+		display: flex;
+		
+	}
+	
+	.images img {
+	
+		width: 400px;
+		height: 550px;
+
+	}
+
+}
+	.btn {
+		padding: 20px;
+		font-size: 30px;
+	}
+
+	.home {
+		.welcome-text {
+			font-size: 27px;
+		}
+
+
+	}
+	.images img {
+		display: flex;
+		justify-content: left; 
+
+}
+@media (min-width: 200px) {
+	.contact-mail {
+		font-size: 16px;
+	}
+
+}
+@media (min-width: 415px) {
+	.contact-mail {
+		font-size: 20px;
+	}
+}
+
+@media (min-width: 992px) {
+	.contact-mail {
+		font-size: 24px;
+	}
+}
